@@ -18,15 +18,15 @@
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
         margin-top: 50px;
-        position: relative;
+        overflow: hidden; /* Añadido para que el contenedor tome el tamaño del contenido */
       }
+
       .logo {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        max-width: 150px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
       }
       .footer {
         text-align: center;
@@ -38,44 +38,16 @@
   </head>
   <body>
     <div class="container">
-      <!-- Logo de la empresa -->
-      <img src="Logo Pagano PNG.png" alt="Logo de la empresa" class="logo" />
-      <h1 class="text-center">Términos y Condiciones del Sorteo</h1>
       <br /><br />
-      <p>
-        Al participar en este sorteo, aceptas los siguientes términos y
-        condiciones:
-      </p>
-      <ul>
-        <li>
-          El sorteo está abierto a residentes de [país] mayores de 18 años.
-        </li>
-        <li>
-          Para participar, debes seguir las instrucciones proporcionadas en la
-          publicación del sorteo en nuestras redes sociales.
-        </li>
-        <li>
-          El ganador será seleccionado al azar entre todos los participantes
-          elegibles.
-        </li>
-        <li>
-          El premio no es transferible y no puede ser canjeado por efectivo.
-        </li>
-        <li>
-          Nos reservamos el derecho de modificar o cancelar el sorteo en
-          cualquier momento sin previo aviso.
-        </li>
-      </ul>
-      <p>
-        Al participar en el sorteo, aceptas cumplir con estas reglas y
-        regulaciones.
-      </p>
-    </div>
-    <div class="footer">
-      <p>
-        &copy; 2024 Ricardo A. Pagano & Cia. S.R.L. Todos los derechos
-        reservados.
-      </p>
+      <a href=".html">
+        <img src="sorteo.jpg" alt="" class="logo" />
+      </a>
+      <div class="footer">
+        <p>
+          &copy; 2024 Ricardo A. Pagano & Cia. S.R.L. Todos los derechos
+          reservados.
+        </p>
+      </div>
     </div>
 
     <!-- Bootstrap JS y jQuery (opcional) -->
